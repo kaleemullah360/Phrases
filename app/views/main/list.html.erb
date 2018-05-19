@@ -1,22 +1,28 @@
-
-<div ><label>Phrases Left&nbsp<span id="phrasesCount"></span></label></div><br>
-
-
-<div id="phrases">
-  <h2>Phrases</h2>
-  <button type="button" onclick="getPhrase()">Get New Phrase</button> | 
-  <button type="button" onclick="clearPhrase()">Clear Phrase</button>
+<div class="container">
+    <br><br>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="page-header">
+                <h1>Phrases Left&nbsp <span id="phrasesCount">Subtext for header</span></h1>
+            </div>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="getPhrase()">Get New Phrase</button>
+            <button type="button" class="btn btn-danger" onclick="clearPhrase()">Clear All</button>
+        </div>
+        <br><br>
+            <div class="panel-body">
+                <table id="myTable" class="table" >
+                    <thead>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+    </div>
 </div>
 
-<table id="myTable">
-	<thead>
-	</thead>
-	<tbody>
-	</tbody>
-</table>
-
 <script type="text/javascript">
-var host = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port + '/': '/');
+    var host = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port + '/': '/');
 //var host = "http://localhost:3000/";
 console.log(host);
 setPhrases();
@@ -24,59 +30,56 @@ var count= 10;
 count_pharses(count);
 function getPhrase() {
 
-if(count == 0){
-	return
-}
+    if(count == 0){
+        return
+    }
 
-$.ajax({
-            url: host + "main/get/phrases",
-            type:'GET',
-            dataType: 'json',
-            data:{id: count},
-            success:function(response){
-                response['phrases'].name
-                var id = response['phrases'].id;
-                var html = response['phrases'].name;
-                insterRow(id, html);
-                count = count -1;
-                count_pharses(count);
-            }
-        })
+    $.ajax({
+        url: host + "main/get/phrases",
+        type:'GET',
+        dataType: 'json',
+        data:{id: count},
+        success:function(response){
+            response['phrases'].name
+            var id = response['phrases'].id;
+            var html = response['phrases'].name;
+            insterRow(id, html);
+            count = count -1;
+            count_pharses(count);
+        }
+    })
 }
 
 
 function clearPhrase(){
-	setPhrases();
+    setPhrases();
 }
 
 function count_pharses(count) {
-var div = document.getElementById('phrasesCount');
+    var div = document.getElementById('phrasesCount');
 
-div.innerHTML = count;
+    div.innerHTML = count;
 }
 
 function insterRow(id, text){
-var table = document.getElementById("myTable");
-// Create an empty <tr> element and add it to the 1st position of the table:
-var row = table.insertRow(0);
-// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
-var cell1 = row.insertCell(0);
-// Add some text to the new cells:
-cell1.innerHTML = text;
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = "<tr><td>" + text + "</td></tr>";
 }
 
 function setPhrases() {
-$.ajax({
-            url: host + "main/count/phrases",
-            type:'GET',
-            dataType: 'json',
-            data:{},
-            success:function(response){
+    $.ajax({
+        url: host + "main/count/phrases",
+        type:'GET',
+        dataType: 'json',
+        data:{},
+        success:function(response){
             count = response['phrases'];
-           	count_pharses(count);
-	 		$("#myTable tr").remove(); 
-            }
-        })
+            count_pharses(count);
+            $("#myTable tr").remove(); 
+        }
+    })
 }
 
 </script>

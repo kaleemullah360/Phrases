@@ -3303,3 +3303,1730 @@ Processing by MainController#count_phrases as JSON
 Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:39:17 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 280ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:18 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:39:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 01:39:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 01:39:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (1.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 01:39:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:21 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:39:22 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:22 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:39:22 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:22 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:39:23 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 01:39:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 01:39:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 01:39:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 01:39:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 01:39:25 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 01:39:25 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:25 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:39:27 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:39:28 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:47:48 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6550ms (Views: 6531.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:47:55 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:47:55 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:49:43 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 421ms (Views: 400.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:49:44 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:49:51 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 17ms (Views: 1.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 01:49:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:52:33 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:52:33 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:52:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:53:06 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:53:07 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:53:08 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 01:56:24 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 01:56:24 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 01:56:26 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 01:56:41 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 01:56:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 01:56:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:00:50 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:00:51 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:00:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:00:53 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:00:53 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:00:54 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:01:35 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:01:35 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:01:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:01:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:01:37 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:01:37 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:01:37 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:02:42 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:02:42 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:02:43 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:02:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:02:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:03:50 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:03:51 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:03:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:03:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:03:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:03:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:04:05 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:04:05 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:04:06 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:04:07 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:04:07 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:04:07 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:04:44 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 428ms (Views: 407.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:04:45 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:04:49 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:04:50 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:05:22 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 575ms (Views: 555.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:05:23 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:05:26 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 25ms (Views: 1.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:05:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:05:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (1.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:05:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (1.3ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:09:10 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 0.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:09:10 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:09:10 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:09:10 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=2" for 127.0.0.1 at 2018-05-20 02:09:12 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=1" for 127.0.0.1 at 2018-05-20 02:09:12 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:09:13 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:11:15 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 314ms (Views: 311.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:11:16 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:11:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:11:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:11:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:11:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (1.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:11:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:15:17 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:15:17 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:15:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:15:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:15:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:15:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:15:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:15:54 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:15:54 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:15:56 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:15:57 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:16:34 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:16:34 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:16:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:16:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:16:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (1.1ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:16:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:16:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:16:36 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:17:08 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:17:09 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:20:53 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:20:53 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:20:54 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:20:54 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:20:54 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:21:25 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:21:25 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:21:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:21:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:21:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:21:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:21:28 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:22:32 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:22:32 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:22:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:22:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:22:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:22:48 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:22:48 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:22:50 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:22:51 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:22:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:22:52 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:22:53 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:24:03 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:24:04 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:24:04 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:24:19 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:24:19 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:24:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:24:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (1.1ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:24:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:24:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:24:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:24:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:24:42 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:24:43 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:24:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.3ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:24:44 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:24:45 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (1.1ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:24:45 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:24:45 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:25:06 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:06 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:25:08 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:08 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:09 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:09 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:25:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:10 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:11 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:25:21 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:25:22 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:15 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:16 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:16 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:16 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:16 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:26:17 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:26:17 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:26:18 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:19 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:26:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:26:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:26:20 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:26:20 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:21 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:26:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:26:22 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:26:23 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:26:23 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:24 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:26:25 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:27 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:26:31 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:26:31 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:26:32 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:26:33 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:26:33 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:26:33 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:26:33 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:26:33 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:27:46 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:27:46 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:27:47 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:27:48 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:28:07 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:28:07 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:28:08 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (1.1ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:28:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:28:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:28:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:28:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:28:09 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:28:10 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (1.0ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:28:10 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-05-20 02:28:28 +0500
+Processing by MainController#list as HTML
+  Rendering main/list.html.erb within layouts/application
+  Rendered main/list.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:28:28 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:28:29 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.8ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:28:30 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:28:30 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:28:30 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:28:30 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:28:30 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.5ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:28:31 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:28:31 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:28:33 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=10" for 127.0.0.1 at 2018-05-20 02:28:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/get/phrases?id=9" for 127.0.0.1 at 2018-05-20 02:28:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"9"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=8" for 127.0.0.1 at 2018-05-20 02:28:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=7" for 127.0.0.1 at 2018-05-20 02:28:34 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"7"}
+  [1m[36mMain Load (0.4ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/get/phrases?id=6" for 127.0.0.1 at 2018-05-20 02:28:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=5" for 127.0.0.1 at 2018-05-20 02:28:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mMain Load (0.6ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/main/get/phrases?id=4" for 127.0.0.1 at 2018-05-20 02:28:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mMain Load (0.9ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/main/get/phrases?id=3" for 127.0.0.1 at 2018-05-20 02:28:35 +0500
+Processing by MainController#get_phrases as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mMain Load (0.7ms)[0m  [1m[34mSELECT  "mains".* FROM "mains" WHERE "mains"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:28:36 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/main/count/phrases" for 127.0.0.1 at 2018-05-20 02:28:36 +0500
+Processing by MainController#count_phrases as JSON
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "mains"[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
