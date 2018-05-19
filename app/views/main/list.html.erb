@@ -1,0 +1,82 @@
+
+<div ><label>Phrases Left&nbsp<span id="phrasesCount"></span></label></div><br>
+
+
+<div id="phrases">
+  <h2>Phrases</h2>
+  <button type="button" onclick="getPhrase()">Get New Phrase</button> | 
+  <button type="button" onclick="clearPhrase()">Clear Phrase</button>
+</div>
+
+<table id="myTable">
+	<thead>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+
+<script type="text/javascript">
+
+var host = "http://localhost:3000/";
+
+setPhrases();
+var count= 10;
+count_pharses(count);
+function getPhrase() {
+
+if(count == 0){
+	return
+}
+
+$.ajax({
+            url: host + "main/get/phrases",
+            type:'GET',
+            dataType: 'json',
+            data:{id: count},
+            success:function(response){
+                response['phrases'].name
+                var id = response['phrases'].id;
+                var html = response['phrases'].name;
+                insterRow(id, html);
+                count = count -1;
+                count_pharses(count);
+            }
+        })
+}
+
+
+function clearPhrase(){
+	setPhrases();
+}
+
+function count_pharses(count) {
+var div = document.getElementById('phrasesCount');
+
+div.innerHTML = count;
+}
+
+function insterRow(id, text){
+var table = document.getElementById("myTable");
+// Create an empty <tr> element and add it to the 1st position of the table:
+var row = table.insertRow(0);
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+var cell1 = row.insertCell(0);
+// Add some text to the new cells:
+cell1.innerHTML = text;
+}
+
+function setPhrases() {
+$.ajax({
+            url: host + "main/count/phrases",
+            type:'GET',
+            dataType: 'json',
+            data:{},
+            success:function(response){
+            count = response['phrases'];
+           	count_pharses(count);
+	 		$("#myTable tr").remove(); 
+            }
+        })
+}
+
+</script>
