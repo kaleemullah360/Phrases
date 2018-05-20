@@ -3,30 +3,36 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="page-header">
-                <h1>Phrases Left&nbsp <span id="phrasesCount">Subtext for header</span></h1>
+                <h1>Phrases Left&nbsp <span id="phrasesCount"></span></h1>
             </div>
             <br>
             <button type="button" class="btn btn-primary" onclick="getPhrase()">Get New Phrase</button>
             <button type="button" class="btn btn-danger" onclick="clearPhrase()">Clear All</button>
         </div>
         <br><br>
-            <div class="panel-body">
-                <table id="myTable" class="table" >
-                    <thead>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
+        <div class="panel-body">
+            <table id="myTable" class="table" >
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
 <script type="text/javascript">
+
     var host = location.protocol+'//'+location.hostname+(location.port ? ':'+location.port + '/': '/');
 //var host = "http://localhost:3000/";
-console.log(host);
+
 setPhrases();
 var count= 10;
+
+if(performance.navigation.type == 1){
+    pop_history();
+}
+
 count_pharses(count);
 function getPhrase() {
 
@@ -40,7 +46,6 @@ function getPhrase() {
         dataType: 'json',
         data:{id: count},
         success:function(response){
-            response['phrases'].name
             var id = response['phrases'].id;
             var html = response['phrases'].name;
             insterRow(id, html);
@@ -53,6 +58,7 @@ function getPhrase() {
 
 function clearPhrase(){
     setPhrases();
+    clearHistory();
 }
 
 function count_pharses(count) {
@@ -68,9 +74,56 @@ function insterRow(id, text){
     cell1.innerHTML = "<tr><td>" + text + "</td></tr>";
 }
 
+
+
 function setPhrases() {
     $.ajax({
         url: host + "main/count/phrases",
+        type:'GET',
+        dataType: 'json',
+        data:{},
+        success:function(response){
+            count = response['phrases'];
+            count_pharses(count);
+            $("#myTable tr").remove(); 
+        }
+    })
+}
+
+function pop_history(){
+    $.ajax({
+        url: host + "main/get/history",
+        type:'GET',
+        dataType: 'json',
+        data:{},
+        success:function(response){
+            var len = response['phrases'].length;
+
+            for(id = 0; id < len; id++){
+                p_id = response['phrases'][id];
+                console.log(p_id);
+                $.ajax({
+                    url: host + "main/get/phrases",
+                    type:'GET',
+                    dataType: 'json',
+                    data:{id: p_id},
+                    success:function(response){
+                        var id = response['phrases'].id;
+                        var html = response['phrases'].name;
+                        insterRow(id, html);
+                        count = count -1;
+                        count_pharses(count);
+                    }
+                })
+
+            }
+        }
+    })
+}
+
+function clearHistory(){
+    $.ajax({
+        url: host + "main/clear/history",
         type:'GET',
         dataType: 'json',
         data:{},
